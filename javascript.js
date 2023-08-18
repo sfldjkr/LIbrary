@@ -38,14 +38,15 @@ let removeCard = (indexi)  => {
     library = library.filter(function (el) {
         return el != null;
     });
+    console.log(library.length); 
 
     if (library.length === 0) {
-        console.log()
+        outputBox.innerHTML = '';
     }
     else {
         showBooks();
     };
-}
+};
 
 let showBooks = () => {
     outputBox.innerHTML = '';
@@ -68,7 +69,7 @@ let showBooks = () => {
             <h3>${book.myauthor}</h3> 
             <h3>${book.mypages} Pages</h3>
             <button class='hasNotReadButton readbtn' id='${book.index}' onClick="toogleBtn(${book.index})">${book.hasReadBook}</button>
-            <button class='removeCard' onClick="removeCard(${book.index}">Remove</button>
+            <button class='removeCard' onClick="removeCard(${book.index})">Remove</button>
             `;
             newDiv.classList.add('cards');
             outputBox.appendChild(newDiv);
