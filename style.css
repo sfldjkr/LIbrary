@@ -204,5 +204,41 @@ dialog::backdrop {
     font-weight: bolder;
 }
 
+@media screen and (max-width: 700px) {
+    .heading > button {
+        border:none;
+        font-size: small;
+        margin: 0px 10px;
+        border-radius: 15px 15px 15px 15px;
+        padding:5px 10px;
+        background-color: rgba(39, 121, 167,0.4);
+    }
+    
+    .heading > button:hover {
+        transform: scale(1.1);
+        margin:0px 10px;
+        background-color: rgba(39, 121, 167,0.6);
+    }
+
+    .heading > h1 {
+        font-weight: bold;
+        font-size: 40px;
+        letter-spacing: 3px;
+    }
+
+    .heading {
+        display: grid;
+        grid-template-columns: 2fr auto auto;
+        align-items: center;
+        width:90%;
+        margin:auto;
+        justify-content: space-around;
+    }
+
+    .cards {
+        margin: auto;
+    }
+    
+  }
 
 
