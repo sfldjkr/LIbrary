@@ -12,13 +12,26 @@ let index = 0;
 index ++;
 
 
-function Book(title, author, pages, hasread, indexi) { 
-    this.mytitle = title;
-    this.myauthor = author;
-    this.mypages = pages;
-    this.hasReadBook = hasread;
-    this.index = indexi;
+// function Book(title, author, pages, hasread, indexi) { 
+//     this.mytitle = title;
+//     this.myauthor = author;
+//     this.mypages = pages;
+//     this.hasReadBook = hasread;
+//     this.index = indexi;
+// }
+
+class Book  {
+    constructor(title, author, pages, hasread, indexi) {
+        this.mytitle = title;
+        this.myauthor = author;
+        this.mypages = pages;
+        this.hasReadBook = hasread;
+        this.index = indexi;
+    }
 }
+
+
+
 
 showButton.addEventListener("click", () => {
     favDialog.showModal();
