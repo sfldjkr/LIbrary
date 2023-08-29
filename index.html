@@ -1,54 +1,91 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Library</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="./javascript.js" defer></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Work+Sans:wght@300&display=swap" rel="stylesheet">
-</head>
-<body>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&family=Work+Sans:wght@300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
     <div class="headersec">
-            <div class="heading">
-                <h1>Library</h1>
-                <button>Log In</button>
-                <button>Register</button>
-            </div>
+      <div class="heading">
+        <h1>Library</h1>
+        <button>Log In</button>
+        <button>Register</button>
+      </div>
     </div>
     <div class="bodysec">
-                <dialog id="favDialog">
-                    <form>
-                        <h1>Add New Book</h1>
-                        <div class="inputdiv">
-                            <input type="text" id="title" placeholder="Title" required>
-                        </div>
+      <dialog id="favDialog">
+        <form id="form" novalidate>
+          <h1>Add New Book</h1>
+          <div class="inputdiv">
+            <input
+              type="text"
+              id="title"
+              minlength="3"
+              maxlength="15"
+              name="Title"
+              placeholder="Title"
+              required
+            />
+          </div>
 
-                        <div class="inputdiv">
-                            <input type="text" id="author" placeholder="Author" required>
-                        </div>
+          <div class="inputdiv">
+            <input
+              type="text"
+              id="author"
+              name="authorName"
+              minlength="3"
+              maxlength="15"
+              placeholder="Author"
+              required
+            />
+          </div>
 
-                        <div class="inputdiv">
-                            <input type="number" id="pages" placeholder="Pages" required>
-                        </div>
-                        <br>
-                        <label for="hasread">Already Read?</label>
-                        <input type="radio" id="hasread">
-                        <br>
-                        <br>
-                        <div>
-                            <button value="cancel" class="formbtn" formmethod="dialog">Cancel</button>
-                            <button id="confirmBtn"  class="formbtn" value="default">Confirm</button>
-                        </div>
-                    </form>
-                </dialog>
-                    <div class="showDialog">
-                        <button id="showDialog">+ Add Book</button>
-                    </div>
-        <div class="allBooks">
-       </div>
+          <div class="inputdiv">
+            <input
+              type="number"
+              id="pages"
+              name="PagesNum"
+              placeholder="Pages"
+              min="3"
+              max="10000"
+              required
+            />
+          </div>
+          <br />
+          <label for="hasread">Already Read?</label>
+          <input type="radio" id="hasread" />
+          <br />
+          <br />
+          <div>
+            <button id="confirmBtn" class="formbtn" value="default">
+              Confirm
+            </button>
+          </div>
+        </form>
+        <form>
+          <button
+            value="cancel"
+            id="cancelBtn"
+            class="formbtn"
+            formmethod="dialog"
+          >
+            Cancel
+          </button>
+        </form>
+      </dialog>
+      <div class="showDialog">
+        <button id="showDialog">+ Add Book</button>
+      </div>
+      <div class="allBooks"></div>
     </div>
-</body>
+  </body>
 </html>

@@ -4,241 +4,232 @@
 RGB 250, 250, 250
  */
 
- body {
-    height:100vh;
-    display: grid;
-    grid-template-rows: 1fr 4fr;
-    margin: 0px;
-    padding: 0px;
-    color: rgb(250, 250, 250);
-
- }
+body {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+  margin: 0px;
+  padding: 0px;
+  color: rgb(250, 250, 250);
+}
 
 .bodysec {
-    background-color:  rgba(73, 197, 182,0.6);
-    padding:20px;
-    color: rgb(250, 250, 250);
+  background-color: rgba(73, 197, 182, 0.6);
+  padding: 20px;
+  color: rgb(250, 250, 250);
 }
 
 .headersec {
-    background-color:rgba(39, 121, 167,0.6);
- 
+  background-color: rgba(39, 121, 167, 0.6);
 }
 
 * {
-    font-family: 'Work Sans', sans-serif;
-    letter-spacing: 2px;
-
+  font-family: "Work Sans", sans-serif;
+  letter-spacing: 2px;
 }
 
 .heading {
-    display: grid;
-    grid-template-columns: 2fr auto auto;
-    align-items: center;
-    width:70%;
-    margin:auto;
-    justify-content: space-around;
+  display: grid;
+  grid-template-columns: 2fr auto auto;
+  align-items: center;
+  width: 70%;
+  margin: auto;
+  justify-content: space-around;
 }
 
 .heading > h1 {
-    font-weight: bold;
-    font-size: 55px;
-    letter-spacing: 3px;
+  font-weight: bold;
+  font-size: 55px;
+  letter-spacing: 3px;
 }
 
 .heading > button {
-    border:none;
-    margin: 0px 15px;
-    border-radius: 15px 15px 15px 15px;
-    padding:10px 20px;
-    background-color: rgba(39, 121, 167,0.4);
+  border: none;
+  margin: 0px 15px;
+  border-radius: 15px 15px 15px 15px;
+  padding: 10px 20px;
+  background-color: rgba(39, 121, 167, 0.4);
 }
 
 .heading > button:hover {
-    transform: scale(1.1);
-    margin:0px 20px;
-    background-color: rgba(39, 121, 167,0.6);
+  transform: scale(1.1);
+  margin: 0px 20px;
+  background-color: rgba(39, 121, 167, 0.6);
 }
 
 .showDialog {
-    margin: auto;
-    text-align: center;
+  margin: auto;
+  text-align: center;
 }
 
 .showDialog > button {
-    border: none;
-    background-color:  rgba(73, 197, 182,0.1);
-    font-weight: bold;
+  border: none;
+  background-color: rgba(73, 197, 182, 0.1);
+  font-weight: bold;
 }
 
 .showDialog > button:hover {
-    background-color:  rgba(73, 197, 182,0.2);
-    transform: scale(1.1);
-    letter-spacing: 3px;
-    font-weight: bolder;
+  background-color: rgba(73, 197, 182, 0.2);
+  transform: scale(1.1);
+  letter-spacing: 3px;
+  font-weight: bolder;
 }
 
 dialog {
-    background-color:  rgba(39, 121, 167,0.4);
-    border:none;
-    border-radius: 15px;
-    padding: 20px 30px;
-    text-align: center;
-    color: rgb(250, 250, 250);
-    font-weight: bold;
+  background-color: rgba(39, 121, 167, 0.4);
+  border: none;
+  border-radius: 15px;
+  padding: 20px 30px;
+  text-align: center;
+  color: rgb(250, 250, 250);
+  font-weight: bold;
 }
 
 dialog::backdrop {
-    background-color:rgba(119,136,153, 0.5);
+  background-color: rgba(119, 136, 153, 0.5);
 }
 
 .inputdiv {
-    margin: 15px 0px;
+  margin: 15px 0px;
 }
 .inputdiv > input {
-    -webkit-appearance: none;
-    border: none;
-    outline: none;
-    background-color: rgba(39, 121, 167,0.2);
-    color: rgb(250, 250, 250);
-    border-bottom: 2px solid white;
-    opacity: 0.7;
+  -webkit-appearance: none;
+  border: none;
+  outline: none;
+  background-color: rgba(39, 121, 167, 0.2);
+  color: rgb(250, 250, 250);
+  border-bottom: 2px solid white;
+  opacity: 0.7;
 }
 
 .inputdiv > input:focus {
-    background-color: rgba(39, 121, 167,0.6);
-    color: rgb(250, 250, 250);
-    opacity: 1;
-    padding: 6px;
-    margin:1px;
-    border-bottom: 1px solid white;
-    font-weight: bolder;
+  background-color: rgba(39, 121, 167, 0.6);
+  color: rgb(250, 250, 250);
+  opacity: 1;
+  padding: 6px;
+  margin: 1px;
+  border-bottom: 1px solid white;
+  font-weight: bolder;
 }
 
-
 .inputdiv > input::placeholder {
-    font-weight: bold;
-    color:white;
-    text-align: center;
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
 
 .formbtn {
-    border:none;
-    margin: 0px 5px;
-    border-radius: 15px 15px 15px 15px;
-    padding:5px 10px;
-    background-color: #2779a766;
-    color: rgb(250, 250, 250);
-    font-weight: bold;
+  border: none;
+  margin: 1.5vh 5px;
+  border-radius: 15px 15px 15px 15px;
+  padding: 5px 10px;
+  background-color: #2779a766;
+  color: rgb(250, 250, 250);
+  font-weight: bold;
 }
 
 .formbtn:hover {
-    transform: scale(1.1);
-    margin:0px 13px;
-    background-color: rgba(39, 121, 167,0.6);
+  transform: scale(1.1);
+  margin: 0px 13px;
+  background-color: rgba(39, 121, 167, 0.6);
 }
 
 .allBooks {
-    padding: 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-    gap:30px;
-    width:90%;
-    text-align: center;
-    margin: 10px auto;
+  padding: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 30px;
+  width: 90%;
+  text-align: center;
+  margin: 10px auto;
 }
 
 .cards {
-    background-color: white;
-    color: black;
-    font-weight: bold;
-    text-align: center;
-    max-width: 200px;
-    border-radius: 15px;
-    padding: 10px 20px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+  max-width: 200px;
+  border-radius: 15px;
+  padding: 10px 20px;
 }
 
 .hasReadButton {
-    background-color:rgba(99, 230, 39, 0.6);
-    border: none;
-    width:100%;
-    padding:10px;
-    border-radius: 5px 5px 5px 5px;
+  background-color: rgba(99, 230, 39, 0.6);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .hasNotReadButton {
-    background-color:rgba(219, 66, 99, 0.6);
-    border: none;
-    width:100%;
-    padding:10px;
-    border-radius: 5px 5px 5px 5px;
-    font-weight: bold;
-    
+  background-color: rgba(219, 66, 99, 0.6);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
 }
 
 .hasNotReadButton:hover {
-    background-color: rgba(219, 66, 99, 0.8);
-    font-weight: bolder;
+  background-color: rgba(219, 66, 99, 0.8);
+  font-weight: bolder;
 }
 
 .hasReadButton:hover {
-    font-weight: bolder;
-    background-color:rgba(99, 230s, 39, 0.6);
+  font-weight: bolder;
+  background-color: rgba(99, 230s, 39, 0.6);
 }
 
 .removeCard {
-    margin-top: 10px;
-    background-color:rgba(119,136,153, 0.3);
-    border: none;
-    width:100%;
-    padding:10px;
-    border-radius: 5px 5px 5px 5px;
-    font-weight: bold;
-    margin-bottom: 3px;
+  margin-top: 10px;
+  background-color: rgba(119, 136, 153, 0.3);
+  border: none;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px 5px 5px 5px;
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
-
 .removeCard:hover {
-    margin-top: 10px;
-    background-color:rgba(119,136,153, 0.6);
-    font-weight: bolder;
+  margin-top: 10px;
+  background-color: rgba(119, 136, 153, 0.6);
+  font-weight: bolder;
 }
 
 @media screen and (max-width: 700px) {
-    .heading > button {
-        border:none;
-        font-size: small;
-        margin: 0px 10px;
-        border-radius: 15px 15px 15px 15px;
-        padding:5px 10px;
-        background-color: rgba(39, 121, 167,0.4);
-    }
-    
-    .heading > button:hover {
-        transform: scale(1.1);
-        margin:0px 10px;
-        background-color: rgba(39, 121, 167,0.6);
-    }
-
-    .heading > h1 {
-        font-weight: bold;
-        font-size: 40px;
-        letter-spacing: 3px;
-    }
-
-    .heading {
-        display: grid;
-        grid-template-columns: 2fr auto auto;
-        align-items: center;
-        width:90%;
-        margin:auto;
-        justify-content: space-around;
-    }
-
-    .cards {
-        margin: auto;
-    }
-    
+  .heading > button {
+    border: none;
+    font-size: small;
+    margin: 0px 10px;
+    border-radius: 15px 15px 15px 15px;
+    padding: 5px 10px;
+    background-color: rgba(39, 121, 167, 0.4);
   }
 
+  .heading > button:hover {
+    transform: scale(1.1);
+    margin: 0px 10px;
+    background-color: rgba(39, 121, 167, 0.6);
+  }
 
+  .heading > h1 {
+    font-weight: bold;
+    font-size: 40px;
+    letter-spacing: 3px;
+  }
+
+  .heading {
+    display: grid;
+    grid-template-columns: 2fr auto auto;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    justify-content: space-around;
+  }
+
+  .cards {
+    margin: auto;
+  }
+}
